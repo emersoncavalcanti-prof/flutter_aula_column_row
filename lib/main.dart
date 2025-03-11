@@ -12,8 +12,28 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Image.network(
-            'https://www.escolatecnicalimoeiro.com.br/wordpress/wp-content/uploads/cropped-LOGO-ok-1-2.png',
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 100),
+                child: Image.network(
+                  'https://www.escolatecnicalimoeiro.com.br/wordpress/wp-content/uploads/cropped-LOGO-ok-1-2.png',
+                  width: 200,
+                ),
+              ),
+              SizedBox(height: 450),
+              Container(
+                width: 300,
+                height: 60,
+                color: Colors.black,
+                child: Center(
+                  child: Text(
+                    'Logar',
+                    style: TextStyle(color: Colors.white, fontSize: 30),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
