@@ -12,15 +12,12 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Container(
-            width: 300,
-            height: 300,
-            decoration: BoxDecoration(
+          child: Text(
+            'Flutter',
+            style: TextStyle(
+              fontSize: 150,
+              fontWeight: FontWeight.bold,
               color: Colors.red,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(150),
-                bottomRight: Radius.circular(150),
-              ),
             ),
           ),
         ),
