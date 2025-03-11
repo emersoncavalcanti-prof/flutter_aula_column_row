@@ -12,13 +12,8 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text(
-            'Flutter',
-            style: TextStyle(
-              fontSize: 150,
-              fontWeight: FontWeight.bold,
-              color: Colors.red,
-            ),
+          child: Image.network(
+            'https://www.escolatecnicalimoeiro.com.br/wordpress/wp-content/uploads/cropped-LOGO-ok-1-2.png',
           ),
         ),
       ),
