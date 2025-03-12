@@ -27,9 +27,19 @@ class HomePage extends StatelessWidget {
                 height: 60,
                 color: Colors.black,
                 child: Center(
-                  child: Text(
-                    'Logar',
-                    style: TextStyle(color: Colors.white, fontSize: 30),
+                  child: Row(
+                    spacing: 20,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.network(
+                        'https://www.escolatecnicalimoeiro.com.br/wordpress/wp-content/uploads/cropped-LOGO-ok-1-2.png',
+                        height: 30,
+                      ),
+                      Text(
+                        'Logar',
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      ),
+                    ],
                   ),
                 ),
               ),
